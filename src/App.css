@@ -670,6 +670,48 @@
   background: rgba(56, 189, 248, 0.1);
 }
 
+/* IDIOMAS / LANGUAGES LIST */
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.language-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.65rem 0.85rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.language-name {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--text-primary);
+  flex-shrink: 0;
+}
+
+.language-badge {
+  margin-left: auto;
+  text-align: right;
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  background: rgba(129, 140, 248, 0.1);
+  border: 1px solid rgba(129, 140, 248, 0.25);
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  line-height: 1.35;
+  font-weight: 500;
+  max-width: 75%;
+}
+
 /* CERTIFICATIONS */
 .cert-grid {
   display: grid;

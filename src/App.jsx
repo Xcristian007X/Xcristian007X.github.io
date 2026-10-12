@@ -462,22 +462,14 @@ export default function App() {
             {/* Idiomas */}
             <div className="glass-panel skill-category">
               <h3 className="skill-cat-title">
-                <Sparkles size={18} style={{ color: '#818cf8' }} />
+                <Globe size={18} style={{ color: '#818cf8' }} />
                 <span>{t.skills.categories.idiomas}</span>
               </h3>
-              <div className="skills-pills" style={{ flexDirection: 'column' }}>
+              <div className="languages-list">
                 {skillsData.idiomas.map((i, idx) => (
-                  <div
-                    key={idx}
-                    style={{
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      fontSize: '0.85rem',
-                      padding: '0.4rem 0',
-                    }}
-                  >
-                    <strong style={{ color: '#f8fafc' }}>{i.idioma[lang]}:</strong>
-                    <span style={{ color: '#94a3b8' }}>{i.nivel[lang]}</span>
+                  <div key={idx} className="language-row">
+                    <span className="language-name">{i.idioma[lang]}</span>
+                    <span className="language-badge">{i.nivel[lang]}</span>
                   </div>
                 ))}
               </div>
